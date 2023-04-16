@@ -309,7 +309,7 @@ body #nav-music {
   background-size: cover;
 }
 #app ol {
-  max-height: calc(var(--vh) - 170px)!important;
+  max-height: calc(var(--vh) - 510px)!important;
 }
  
 #app ol::-webkit-scrollbar-thumb {
