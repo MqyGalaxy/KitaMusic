@@ -463,7 +463,7 @@
   right: 10px;
   width: 5px;
   height: 35px;
-  background: var(--heo-white-op);
+  background: var(--heo-white);
   border-radius: 2.5px;
   overflow: hidden
 }

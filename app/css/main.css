@@ -298,7 +298,7 @@ body #nav-music {
   background: #fff;
   max-width: 480px;
   max-height: none !important;
-  height: 100%;
+  height: auto;
   min-width: 200px;
 }
 #app .aplayer-box-list .musicBg {
@@ -309,7 +309,7 @@ body #nav-music {
   background-size: cover;
 }
 #app ol {
-  max-height: calc(var(--vh) - 510px)!important;
+  height: 100%;
 }
  
 #app ol::-webkit-scrollbar-thumb {
