@@ -36,7 +36,7 @@
 
 body {
   background: rgb(255, 255, 255);
-  position: relative;
+  top: 0;
 }
 
 #app meting-js .aplayer{
@@ -146,14 +146,13 @@ body #nav-music {
   text-align: center;
   height: auto;
   margin: 15px;
-  display: none;
 }
 
 #app .aplayer-info .aplayer-music .aplayer-author,
 #app .aplayer-info .aplayer-music .aplayer-title {
-  font-size: 2rem;
-  font-weight: 700;
-  color: #fff;
+  font-size: 15px;
+  font-weight: lighter;
+  color: #959595;
 }
 
 #app .aplayer-info .aplayer-lrc {
@@ -166,7 +165,7 @@ body #nav-music {
   font-size: 30px;
   line-height: 44px;
   height: 44px;
-  margin-bottom: 40px;
+  margin-bottom: 36px;
   background: linear-gradient(to right, #b3b3b3 0, #b3b3b3 100%);
   background-size: 100% 100%;
   -webkit-background-clip: text;
@@ -187,7 +186,7 @@ body #nav-music {
   transition: all 0.3s cubic-bezier(0.56, 0.17, 0.22, 0.76), text-shadow 8s 4s ease-in;
   height: fit-content;
   text-shadow: 0px 2px 16px #ffffff94;
-  background: linear-gradient(to right, #ff56aa 0, #fbd1d7 100%);
+  background: linear-gradient(to right, #FF4738 0, #ffb6af 100%);
   background-size: 100% 100%;
   -webkit-background-clip: text;
   background-clip: text;
@@ -236,7 +235,7 @@ body #nav-music {
   margin: 0 160px 0 150px;
 }
 #app .aplayer-info .aplayer-controller .aplayer-played {
-  background: #ff56aa !important;
+  background: #FF4738 !important;
 }
 #app .aplayer-info .aplayer-controller .aplayer-thumb {
   -webkit-transform: none;
@@ -292,7 +291,7 @@ body #nav-music {
 #app .aplayer-box-list {
   width: 40%;
   border-radius: 10px;
-  background: linear-gradient(to right, #ff56aa 0, #fbd1d7 100%);
+  background: linear-gradient(to bottom, #FF4738 0, #ffb6af 100%);
 }
 #app .aplayer-list {
   background: #fff;
@@ -472,7 +471,7 @@ body .aplayer .aplayer-info .aplayer-controller .aplayer-time .aplayer-icon.apla
     width: 30%;
   }
   #app ol > li.aplayer-list-light {
-    background: linear-gradient(to right, #ff56aa 0, #fbd1d7 100%);
+    background: linear-gradient(to right, #FF4738 0, #ffb6af 100%);
     padding: 5px 20px;
     border-radius: 10px;
     height: 52px;
@@ -481,8 +480,11 @@ body .aplayer .aplayer-info .aplayer-controller .aplayer-time .aplayer-icon.apla
   #app ol > li.aplayer-list-light .aplayer-list-title {
     margin-top: 4px;
   }
+  #app ol > li span {
+    color: var(--heo-white)!important;
+  }
   #app ol > li.aplayer-list-light span {
-    color: #fff;
+    color: #fff!important;
   }
   #app ol > li span.aplayer-list-title {
     max-width: 55%;
@@ -604,13 +606,13 @@ body .aplayer .aplayer-info .aplayer-controller .aplayer-time .aplayer-icon.apla
   }
 
   #app .aplayer-info .aplayer-lrc p {
-    font-size: 20px;
-    margin-bottom: 40px;
-    line-height: 32px;
+    font-size: 32px;
+    margin-bottom: 38px;
+    line-height: 42px;
     height: 42px;
   }
   #app .aplayer-info .aplayer-lrc p.aplayer-lrc-current {
-    font-size: 25px;
+    font-size: 32px;
   }
   #app .aplayer-info .aplayer-music {
     display: flex;
@@ -658,9 +660,9 @@ body .aplayer .aplayer-info .aplayer-controller .aplayer-time .aplayer-icon.apla
   }
 }
 
-@media screen and (max-height: 655px) {
+@media screen and (max-height: 700px) {
   #app {
-    background-color: rgba(0,0,0,0);
+    background-color: rgba(0,0,0,0.1);
   }
   #app .aplayer-box-list {
     background: rgba(0,0,0,0);
@@ -671,5 +673,59 @@ body .aplayer .aplayer-info .aplayer-controller .aplayer-time .aplayer-icon.apla
   #app ol > li.aplayer-list-light {
     padding: 10px 20px 10px 20px;
   }
+  #app .aplayer-info .aplayer-music .aplayer-title {
+    font-size: 15px;
+    font-weight: lighter;
+    color: #fff;
+  }
+  #app .aplayer-info .aplayer-music .aplayer-author {
+    font-size: 15px;
+    font-weight: lighter;
+    color: #fff;
+  }
   
+  #app ol > li span {
+    color: #fff;
+  }
+  #app ol > li.aplayer-list-light span {
+    color: var(--heo-white);
+  }
+}
+
+
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  z-index: 10;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+}
+.header .header-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1050px;
+  width: 100%;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.header-box .logo img {
+  height: 50px;
+}
+.header-box .menu {
+  width: 100%;
+}
+.header-box .menu ul {
+  display: flex;
+}
+.header-box .menu ul > li {
+  list-style: none;
+  margin: 0px 20px 0px 20px;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 100;
 }
