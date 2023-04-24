@@ -292,6 +292,10 @@ body #nav-music {
   width: 40%;
   border-radius: 10px;
   background: linear-gradient(to bottom, #FF4738 0, #ffb6af 100%);
+  max-width: 480px;
+  max-height: none !important;
+  height: auto;
+  min-width: 200px;
 }
 #app .aplayer-list {
   background: #fff;
@@ -715,6 +719,7 @@ body .aplayer .aplayer-info .aplayer-controller .aplayer-time .aplayer-icon.apla
 }
 .header-box .logo img {
   height: 50px;
+  width: auto;
 }
 .header-box .menu {
   width: 100%;
